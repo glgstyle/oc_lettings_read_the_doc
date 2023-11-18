@@ -69,7 +69,7 @@ Pour désactiver l'environnement
 .. code-block:: console
 
 
-.. _utilisation:
+.. _utilisation_du_site:
 
 Utilisation du site en local
 -----------------------------
@@ -107,8 +107,11 @@ Utilisation du site en local
 6. Confirmer que le site fonctionne et qu'il est possible de naviguer (vous devriez voir plusieurs profils et locations)
 
 
+.. _linting:
+
 Recherche d'erreurs (linting)
 ------------------------------
+
 1. Aller dans le répertoire contenant le projet
 
 .. code-block:: console
@@ -136,6 +139,8 @@ Recherche d'erreurs (linting)
 5. Ouvrir dans un navigateur l'index.html qui se trouve dans le dossier flake-report 
 
 
+.. _unit_tests:
+
 Tests unitaires
 ----------------
 
@@ -158,6 +163,8 @@ Tests unitaires
    pytest
 
 
+.. _coverage_tests:
+
 Tests de couverture
 --------------------
 
@@ -167,6 +174,8 @@ Générer un rapport html des tests
 
    coverage html --skip-covered
 
+
+.. _database:
 
 Base de données
 ----------------
@@ -217,3 +226,33 @@ Base de données
 .. code-block:: console
 
    .quit
+
+
+.. _admin_panel:
+
+Panel d'administration
+-----------------------
+
+1. Ouvrir le navigateur et aller à l'adresse suivante
+
+.. code-block:: console
+
+   http://localhost:8000/admin
+
+2. Connectez-vous avec l'utilisateur ``admin``, et le mot de passe ``Abc1234!``
+
+
+.. _windows:
+
+Windows
+-----------------------
+
+Utilisation de PowerShell, comme ci-dessus sauf :
+
+1. Pour activer l'environnement virtuel
+
+.. code-block:: console
+
+   .\venv\Scripts\Activate.ps1
+
+2. Remplacer ``which <my-command>`` par ``(Get-Command <my-command>).Path``
