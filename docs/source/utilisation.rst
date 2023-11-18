@@ -1,4 +1,4 @@
-.. _utilisation_du_site:
+.. _utilisation:
 
 Utilisation du site en local
 -----------------------------
